@@ -1,8 +1,9 @@
-import React from "react";
-import BioBrief from "../components/bio/BioBrief";
-import TopBar from "../components/topbar/TopBar";
-import styled from "styled-components";
-import BioTimeline from "../components/bio/BioTimeline";
+import React from 'react';
+import BioBrief from '../components/bio/BioBrief';
+import TopBar from '../components/topbar/TopBar';
+import styled from 'styled-components';
+import BioTimeline from '../components/bio/BioTimeline';
+import Competition from '../components/bio/Competition';
 
 const Container = styled.div`
     height: 100%;
@@ -18,6 +19,7 @@ const CoachBio = () => {
             <TopBar />
             <Wrapper>
                 <BioBrief />
+                <Competition />
                 <BioTimeline />
             </Wrapper>
         </Container>

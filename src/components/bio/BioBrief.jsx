@@ -1,8 +1,8 @@
-import React from "react";
-import { Image, Row, Col } from "react-bootstrap";
-import WeiImage from "../../assets/weiwang.png";
-import styled from "styled-components";
-import { mobile } from "../../responsive";
+import React from 'react';
+import { Image, Row, Col } from 'react-bootstrap';
+import WeiImage from '../../assets/weiwang.png';
+import styled from 'styled-components';
+import { mobile } from '../../responsive';
 
 const StyledImage = styled(Image)`
     height: 200px;
@@ -13,11 +13,11 @@ const StyledImage = styled(Image)`
 
 const Title = styled(Col)`
     margin-top: 20px;
-    ${mobile({ textAlign: "center" })}
+    ${mobile({ textAlign: 'center' })}
 `;
 
 const Desc = styled.p`
-    font-family: "Fuzzy Bubbles", cursive;
+    font-family: 'Fuzzy Bubbles', cursive;
     &::first-letter {
         font-size: 200%;
     }
@@ -26,10 +26,10 @@ const BioBrief = () => {
     return (
         <React.Fragment>
             <Row className='justify-content-center align-items-center'>
-                <Col sm='2' className='text-center'>
+                <Col md='2' className='text-center'>
                     <StyledImage src={WeiImage} />
                 </Col>
-                <Title sm={{ span: 7, offset: 1 }}>
+                <Title md={{ span: 7, offset: 1 }}>
                     <h1>Wei Wang</h1>
                     <Desc>
                         Wei's long list of achievements starts with her getting
@@ -41,7 +41,7 @@ const BioBrief = () => {
                         in singles and doubles. In 1996 she represented the USA
                         in the Olympic Games in Atlanta. Inducted into the U.S.
                         Table Tennis Hall of Fame in 2002, she has now played
-                        and coached in California for three decades.{" "}
+                        and coached in California for three decades.{' '}
                     </Desc>
                 </Title>
             </Row>
