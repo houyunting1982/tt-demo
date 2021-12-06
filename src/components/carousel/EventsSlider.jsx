@@ -32,7 +32,7 @@ const EventsSlider = () => {
                     src={bg1}
                     alt='First slide'
                 />
-                <StyledCaption light>
+                <StyledCaption light='true'>
                     <h3>Saturday Tournament</h3>
                     <p>
                         Tournament format: Division 1: 1800+, Division 2: &lt;
@@ -52,7 +52,7 @@ const EventsSlider = () => {
                     alt='Second slide'
                 />
 
-                <StyledCaption light>
+                <StyledCaption light='true'>
                     <h3>Professional Private Lessons</h3>
                     <p>
                         With Head Coach Wei Wang: Floor fee + $50/half hour or
