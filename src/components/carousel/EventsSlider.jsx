@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Carousel } from "react-bootstrap";
+import { Button, Carousel } from "react-bootstrap";
 import bg1 from "../../assets/bg1.jpeg";
 import bg2 from "../../assets/bg2.jpeg";
 import bg3 from "../../assets/bg3.jpeg";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledImg = styled.img`
     width: 100wh;
@@ -39,6 +40,9 @@ const EventsSlider = () => {
                         players in your group, win or lose), best two advance to
                         single elimination draw.
                     </p>
+                    <Link to='/tournament'>
+                        <Button variant='secondary'>Details</Button>
+                    </Link>
                 </StyledCaption>
             </Carousel.Item>
             <Carousel.Item>
@@ -55,6 +59,9 @@ const EventsSlider = () => {
                         $90/hour With one of our highly qualified Associate
                         Coaches: Floor Fee + $40/half hour or $70/hour
                     </p>
+                    <Link to='/'>
+                        <Button variant='primary'>More Info</Button>
+                    </Link>
                 </StyledCaption>
             </Carousel.Item>
             <Carousel.Item>
@@ -73,6 +80,9 @@ const EventsSlider = () => {
                         quality, even their more expensive ones. So come consult
                         us before you buy.
                     </p>
+                    <Link to='/'>
+                        <Button variant='success'>Shop</Button>
+                    </Link>
                 </StyledCaption>
             </Carousel.Item>
         </StyledCarousel>

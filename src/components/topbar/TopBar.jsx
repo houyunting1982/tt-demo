@@ -1,12 +1,16 @@
 import React from "react";
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import "./topbar.css";
 
 const Filler = styled.div`
-    height: 70px;
+    height: 56px;
 `;
 
+const ColoredLink = styled(Link)`
+    color: #212529;
+`;
 const TopBar = () => {
     return (
         <React.Fragment>
@@ -15,10 +19,13 @@ const TopBar = () => {
                 expand='lg'
                 bg='dark'
                 variant='dark'
-                className='mt-1'
                 fixed='top'>
                 <Container fluid className='ps-5'>
-                    <Navbar.Brand href='#home'>WESTSIDE TT CENTER</Navbar.Brand>
+                    <Link to='/'>
+                        <Navbar.Brand href='#home'>
+                            WESTSIDE TT CENTER
+                        </Navbar.Brand>
+                    </Link>
                     <Navbar.Toggle aria-controls='responsive-navbar-nav' />
                     <Navbar.Collapse id='responsive-navbar-nav'>
                         <Nav className='me-auto'>
@@ -33,7 +40,12 @@ const TopBar = () => {
                             <NavDropdown
                                 title='Coaches'
                                 id='collasible-nav-coaches'>
-                                <NavDropdown.Item>Head Coach</NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <ColoredLink to='/coaches/weiwang'>
+                                        Head Coach
+                                    </ColoredLink>
+                                </NavDropdown.Item>
+
                                 <NavDropdown.Item>
                                     Associate Coaches
                                 </NavDropdown.Item>
@@ -44,7 +56,11 @@ const TopBar = () => {
                             <NavDropdown
                                 title='Events'
                                 id='collasible-nav-events'>
-                                <NavDropdown.Item>Tournament</NavDropdown.Item>
+                                <NavDropdown.Item>
+                                    <ColoredLink to='/tournament'>
+                                        Tournament
+                                    </ColoredLink>
+                                </NavDropdown.Item>
                                 <NavDropdown.Item>Long Pong</NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Item>

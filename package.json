@@ -2,9 +2,11 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
+    "homepage": "https://houyunting1982.github.io/tt-demo/",
     "dependencies": {
         "@emotion/react": "^11.7.0",
         "@emotion/styled": "^11.6.0",
+        "@g-loot/react-tournament-brackets": "^1.0.15",
         "@mui/icons-material": "^5.2.0",
         "@mui/lab": "^5.0.0-alpha.58",
         "@mui/material": "^5.2.2",
@@ -30,7 +32,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -49,5 +53,8 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "gh-pages": "^3.2.3"
     }
 }
