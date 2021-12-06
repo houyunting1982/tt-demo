@@ -5,11 +5,13 @@ import bg2 from "../../assets/bg2.jpeg";
 import bg3 from "../../assets/bg3.jpeg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { mobile } from "../../responsive";
 
 const StyledImg = styled.img`
     width: 100wh;
     height: 50vh;
     object-fit: cover;
+    ${mobile({ height: "100vh" })}
 `;
 
 const StyledCarousel = styled(Carousel)``;

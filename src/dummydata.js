@@ -1,5 +1,5 @@
 const tournamentSample = {
-    date: new Date("2021-11-20 00:00:00").toDateString(),
+    date: "Sat Nov 20 2021",
     place: "@Westside",
     desc: [
         "All that was to be followed by an *epic* round robin. There were 6 groups in the First Division, and 7 groups in the Second Division. For a second consecutive Saturday, Alex Xue won Div. 2 in an almost flawless performance, defeating several previous Div 2 champions in the process.",

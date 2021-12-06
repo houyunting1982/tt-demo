@@ -2,7 +2,7 @@
     "name": "client",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://houyunting1982.github.io/tt-demo",
+    "homepage": "https://houyunting1982.github.io/tt-demo/",
     "dependencies": {
         "@emotion/react": "^11.7.0",
         "@emotion/styled": "^11.6.0",
@@ -30,7 +30,7 @@
         "web-vitals": "^1.1.2"
     },
     "scripts": {
-        "start": "serve -s build",
+        "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
